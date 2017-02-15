@@ -1,7 +1,7 @@
 // The code below would link the routes to sort of data sources, to post and get data from
 
-var tableData = require("/../data/tableData");
-var waitlistData = require("/../data/waitinglistData");
+var tableData = require("../data/tableData");
+var waitlistData = require("../data/waitinglistData");
 
 // =======
 // Routes:
