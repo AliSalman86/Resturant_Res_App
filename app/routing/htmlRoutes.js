@@ -9,10 +9,6 @@ var path = require("path");
 
 module.exports = function(app) {
 // in case the user request unexisting path, default to home page
-    app.use(function(req, res) {
-        // res.send("Welcome to Starwars page");
-        res.sendFile(path.join(__dirname, "/../public/home.html"));
-    });
 
     app.get("/tables", function(req, res) {
         // res.send("Welcome to Starwars page");
@@ -22,5 +18,10 @@ module.exports = function(app) {
     app.get("/reserve", function(req, res) {
         // res.send("Welcome to Starwars page");
         res.sendFile(path.join(__dirname, "/../public/reserve.html"));
+    });
+
+    app.use(function(req, res) {
+        // res.send("Welcome to Starwars page");
+        res.sendFile(path.join(__dirname, "/../public/home.html"));
     });
 };
